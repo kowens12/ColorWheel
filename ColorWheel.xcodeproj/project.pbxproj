@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6E842EF202E2D8B0064992B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E842EE202E2D8B0064992B /* AppDelegate.swift */; };
+		A6E842F1202E2D8B0064992B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E842F0202E2D8B0064992B /* ViewController.swift */; };
+		A6E842F4202E2D8B0064992B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E842F2202E2D8B0064992B /* Main.storyboard */; };
+		A6E842F6202E2D8B0064992B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E842F5202E2D8B0064992B /* Assets.xcassets */; };
+		A6E842F9202E2D8B0064992B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E842F7202E2D8B0064992B /* LaunchScreen.storyboard */; };
+		A6E84304202E2D8B0064992B /* ColorWheelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E84303202E2D8B0064992B /* ColorWheelTests.swift */; };
+		A6E8430F202E2D8B0064992B /* ColorWheelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E8430E202E2D8B0064992B /* ColorWheelUITests.swift */; };
+		A6E84314202E2D8B0064992B /* ColorWheel WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A6E84313202E2D8B0064992B /* ColorWheel WatchKit App.app */; };
+		A6E8431A202E2D8B0064992B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E84318202E2D8B0064992B /* Interface.storyboard */; };
+		A6E8431C202E2D8B0064992B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E8431B202E2D8B0064992B /* Assets.xcassets */; };
+		A6E84323202E2D8B0064992B /* ColorWheel WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A6E84322202E2D8B0064992B /* ColorWheel WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A6E84328202E2D8B0064992B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E84327202E2D8B0064992B /* InterfaceController.swift */; };
+		A6E8432A202E2D8B0064992B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E84329202E2D8B0064992B /* ExtensionDelegate.swift */; };
+		A6E8432C202E2D8B0064992B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E8432B202E2D8B0064992B /* NotificationController.swift */; };
+		A6E8432E202E2D8C0064992B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E8432D202E2D8C0064992B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6E84300202E2D8B0064992B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E842E3202E2D8B0064992B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6E842EA202E2D8B0064992B;
+			remoteInfo = ColorWheel;
+		};
+		A6E8430B202E2D8B0064992B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E842E3202E2D8B0064992B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6E842EA202E2D8B0064992B;
+			remoteInfo = ColorWheel;
+		};
+		A6E84315202E2D8B0064992B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E842E3202E2D8B0064992B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6E84312202E2D8B0064992B;
+			remoteInfo = "ColorWheel WatchKit App";
+		};
+		A6E84324202E2D8B0064992B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E842E3202E2D8B0064992B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6E84321202E2D8B0064992B;
+			remoteInfo = "ColorWheel WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6E84336202E2D8C0064992B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A6E84323202E2D8B0064992B /* ColorWheel WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E8433A202E2D8C0064992B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A6E84314202E2D8B0064992B /* ColorWheel WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A6E842EB202E2D8B0064992B /* ColorWheel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorWheel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E842EE202E2D8B0064992B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6E842F0202E2D8B0064992B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6E842F3202E2D8B0064992B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6E842F5202E2D8B0064992B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6E842F8202E2D8B0064992B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6E842FA202E2D8B0064992B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E842FF202E2D8B0064992B /* ColorWheelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorWheelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E84303202E2D8B0064992B /* ColorWheelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelTests.swift; sourceTree = "<group>"; };
+		A6E84305202E2D8B0064992B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E8430A202E2D8B0064992B /* ColorWheelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorWheelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E8430E202E2D8B0064992B /* ColorWheelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelUITests.swift; sourceTree = "<group>"; };
+		A6E84310202E2D8B0064992B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E84313202E2D8B0064992B /* ColorWheel WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ColorWheel WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E84319202E2D8B0064992B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A6E8431B202E2D8B0064992B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6E8431D202E2D8B0064992B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E84322202E2D8B0064992B /* ColorWheel WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ColorWheel WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6E84327202E2D8B0064992B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A6E84329202E2D8B0064992B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A6E8432B202E2D8B0064992B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A6E8432D202E2D8C0064992B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6E8432F202E2D8C0064992B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E84330202E2D8C0064992B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6E842E8202E2D8B0064992B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E842FC202E2D8B0064992B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E84307202E2D8B0064992B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E8431F202E2D8B0064992B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6E842E2202E2D8B0064992B = {
+			isa = PBXGroup;
+			children = (
+				A6E842ED202E2D8B0064992B /* ColorWheel */,
+				A6E84302202E2D8B0064992B /* ColorWheelTests */,
+				A6E8430D202E2D8B0064992B /* ColorWheelUITests */,
+				A6E84317202E2D8B0064992B /* ColorWheel WatchKit App */,
+				A6E84326202E2D8B0064992B /* ColorWheel WatchKit Extension */,
+				A6E842EC202E2D8B0064992B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6E842EC202E2D8B0064992B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6E842EB202E2D8B0064992B /* ColorWheel.app */,
+				A6E842FF202E2D8B0064992B /* ColorWheelTests.xctest */,
+				A6E8430A202E2D8B0064992B /* ColorWheelUITests.xctest */,
+				A6E84313202E2D8B0064992B /* ColorWheel WatchKit App.app */,
+				A6E84322202E2D8B0064992B /* ColorWheel WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6E842ED202E2D8B0064992B /* ColorWheel */ = {
+			isa = PBXGroup;
+			children = (
+				A6E842EE202E2D8B0064992B /* AppDelegate.swift */,
+				A6E842F0202E2D8B0064992B /* ViewController.swift */,
+				A6E842F2202E2D8B0064992B /* Main.storyboard */,
+				A6E842F5202E2D8B0064992B /* Assets.xcassets */,
+				A6E842F7202E2D8B0064992B /* LaunchScreen.storyboard */,
+				A6E842FA202E2D8B0064992B /* Info.plist */,
+			);
+			path = ColorWheel;
+			sourceTree = "<group>";
+		};
+		A6E84302202E2D8B0064992B /* ColorWheelTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6E84303202E2D8B0064992B /* ColorWheelTests.swift */,
+				A6E84305202E2D8B0064992B /* Info.plist */,
+			);
+			path = ColorWheelTests;
+			sourceTree = "<group>";
+		};
+		A6E8430D202E2D8B0064992B /* ColorWheelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6E8430E202E2D8B0064992B /* ColorWheelUITests.swift */,
+				A6E84310202E2D8B0064992B /* Info.plist */,
+			);
+			path = ColorWheelUITests;
+			sourceTree = "<group>";
+		};
+		A6E84317202E2D8B0064992B /* ColorWheel WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A6E84318202E2D8B0064992B /* Interface.storyboard */,
+				A6E8431B202E2D8B0064992B /* Assets.xcassets */,
+				A6E8431D202E2D8B0064992B /* Info.plist */,
+			);
+			path = "ColorWheel WatchKit App";
+			sourceTree = "<group>";
+		};
+		A6E84326202E2D8B0064992B /* ColorWheel WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A6E84327202E2D8B0064992B /* InterfaceController.swift */,
+				A6E84329202E2D8B0064992B /* ExtensionDelegate.swift */,
+				A6E8432B202E2D8B0064992B /* NotificationController.swift */,
+				A6E8432D202E2D8C0064992B /* Assets.xcassets */,
+				A6E8432F202E2D8C0064992B /* Info.plist */,
+				A6E84330202E2D8C0064992B /* PushNotificationPayload.apns */,
+			);
+			path = "ColorWheel WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6E842EA202E2D8B0064992B /* ColorWheel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E8433B202E2D8C0064992B /* Build configuration list for PBXNativeTarget "ColorWheel" */;
+			buildPhases = (
+				A6E842E7202E2D8B0064992B /* Sources */,
+				A6E842E8202E2D8B0064992B /* Frameworks */,
+				A6E842E9202E2D8B0064992B /* Resources */,
+				A6E8433A202E2D8C0064992B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6E84316202E2D8B0064992B /* PBXTargetDependency */,
+			);
+			name = ColorWheel;
+			productName = ColorWheel;
+			productReference = A6E842EB202E2D8B0064992B /* ColorWheel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6E842FE202E2D8B0064992B /* ColorWheelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E8433E202E2D8C0064992B /* Build configuration list for PBXNativeTarget "ColorWheelTests" */;
+			buildPhases = (
+				A6E842FB202E2D8B0064992B /* Sources */,
+				A6E842FC202E2D8B0064992B /* Frameworks */,
+				A6E842FD202E2D8B0064992B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6E84301202E2D8B0064992B /* PBXTargetDependency */,
+			);
+			name = ColorWheelTests;
+			productName = ColorWheelTests;
+			productReference = A6E842FF202E2D8B0064992B /* ColorWheelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6E84309202E2D8B0064992B /* ColorWheelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E84341202E2D8C0064992B /* Build configuration list for PBXNativeTarget "ColorWheelUITests" */;
+			buildPhases = (
+				A6E84306202E2D8B0064992B /* Sources */,
+				A6E84307202E2D8B0064992B /* Frameworks */,
+				A6E84308202E2D8B0064992B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6E8430C202E2D8B0064992B /* PBXTargetDependency */,
+			);
+			name = ColorWheelUITests;
+			productName = ColorWheelUITests;
+			productReference = A6E8430A202E2D8B0064992B /* ColorWheelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A6E84312202E2D8B0064992B /* ColorWheel WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E84337202E2D8C0064992B /* Build configuration list for PBXNativeTarget "ColorWheel WatchKit App" */;
+			buildPhases = (
+				A6E84311202E2D8B0064992B /* Resources */,
+				A6E84336202E2D8C0064992B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6E84325202E2D8B0064992B /* PBXTargetDependency */,
+			);
+			name = "ColorWheel WatchKit App";
+			productName = "ColorWheel WatchKit App";
+			productReference = A6E84313202E2D8B0064992B /* ColorWheel WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A6E84321202E2D8B0064992B /* ColorWheel WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6E84333202E2D8C0064992B /* Build configuration list for PBXNativeTarget "ColorWheel WatchKit Extension" */;
+			buildPhases = (
+				A6E8431E202E2D8B0064992B /* Sources */,
+				A6E8431F202E2D8B0064992B /* Frameworks */,
+				A6E84320202E2D8B0064992B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ColorWheel WatchKit Extension";
+			productName = "ColorWheel WatchKit Extension";
+			productReference = A6E84322202E2D8B0064992B /* ColorWheel WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6E842E3202E2D8B0064992B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Katherine Owens";
+				TargetAttributes = {
+					A6E842EA202E2D8B0064992B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A6E842FE202E2D8B0064992B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6E842EA202E2D8B0064992B;
+					};
+					A6E84309202E2D8B0064992B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6E842EA202E2D8B0064992B;
+					};
+					A6E84312202E2D8B0064992B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A6E84321202E2D8B0064992B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A6E842E6202E2D8B0064992B /* Build configuration list for PBXProject "ColorWheel" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6E842E2202E2D8B0064992B;
+			productRefGroup = A6E842EC202E2D8B0064992B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6E842EA202E2D8B0064992B /* ColorWheel */,
+				A6E842FE202E2D8B0064992B /* ColorWheelTests */,
+				A6E84309202E2D8B0064992B /* ColorWheelUITests */,
+				A6E84312202E2D8B0064992B /* ColorWheel WatchKit App */,
+				A6E84321202E2D8B0064992B /* ColorWheel WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6E842E9202E2D8B0064992B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E842F9202E2D8B0064992B /* LaunchScreen.storyboard in Resources */,
+				A6E842F6202E2D8B0064992B /* Assets.xcassets in Resources */,
+				A6E842F4202E2D8B0064992B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E842FD202E2D8B0064992B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E84308202E2D8B0064992B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E84311202E2D8B0064992B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E8431C202E2D8B0064992B /* Assets.xcassets in Resources */,
+				A6E8431A202E2D8B0064992B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E84320202E2D8B0064992B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E8432E202E2D8C0064992B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6E842E7202E2D8B0064992B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E842F1202E2D8B0064992B /* ViewController.swift in Sources */,
+				A6E842EF202E2D8B0064992B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E842FB202E2D8B0064992B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E84304202E2D8B0064992B /* ColorWheelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E84306202E2D8B0064992B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E8430F202E2D8B0064992B /* ColorWheelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6E8431E202E2D8B0064992B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E8432C202E2D8B0064992B /* NotificationController.swift in Sources */,
+				A6E8432A202E2D8B0064992B /* ExtensionDelegate.swift in Sources */,
+				A6E84328202E2D8B0064992B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6E84301202E2D8B0064992B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6E842EA202E2D8B0064992B /* ColorWheel */;
+			targetProxy = A6E84300202E2D8B0064992B /* PBXContainerItemProxy */;
+		};
+		A6E8430C202E2D8B0064992B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6E842EA202E2D8B0064992B /* ColorWheel */;
+			targetProxy = A6E8430B202E2D8B0064992B /* PBXContainerItemProxy */;
+		};
+		A6E84316202E2D8B0064992B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6E84312202E2D8B0064992B /* ColorWheel WatchKit App */;
+			targetProxy = A6E84315202E2D8B0064992B /* PBXContainerItemProxy */;
+		};
+		A6E84325202E2D8B0064992B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6E84321202E2D8B0064992B /* ColorWheel WatchKit Extension */;
+			targetProxy = A6E84324202E2D8B0064992B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6E842F2202E2D8B0064992B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6E842F3202E2D8B0064992B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6E842F7202E2D8B0064992B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6E842F8202E2D8B0064992B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A6E84318202E2D8B0064992B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6E84319202E2D8B0064992B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6E84331202E2D8C0064992B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6E84332202E2D8C0064992B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6E84334202E2D8C0064992B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ColorWheel WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		A6E84335202E2D8C0064992B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "ColorWheel WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheel.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		A6E84338202E2D8C0064992B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = ColorWheel_WatchKit_Extension;
+				INFOPLIST_FILE = "ColorWheel WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		A6E84339202E2D8C0064992B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = ColorWheel_WatchKit_Extension;
+				INFOPLIST_FILE = "ColorWheel WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheel.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		A6E8433C202E2D8C0064992B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ColorWheel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6E8433D202E2D8C0064992B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ColorWheel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6E8433F202E2D8C0064992B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ColorWheelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorWheel.app/ColorWheel";
+			};
+			name = Debug;
+		};
+		A6E84340202E2D8C0064992B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ColorWheelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorWheel.app/ColorWheel";
+			};
+			name = Release;
+		};
+		A6E84342202E2D8C0064992B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ColorWheelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ColorWheel;
+			};
+			name = Debug;
+		};
+		A6E84343202E2D8C0064992B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ColorWheelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ColorWheel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6E842E6202E2D8B0064992B /* Build configuration list for PBXProject "ColorWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E84331202E2D8C0064992B /* Debug */,
+				A6E84332202E2D8C0064992B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E84333202E2D8C0064992B /* Build configuration list for PBXNativeTarget "ColorWheel WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E84334202E2D8C0064992B /* Debug */,
+				A6E84335202E2D8C0064992B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E84337202E2D8C0064992B /* Build configuration list for PBXNativeTarget "ColorWheel WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E84338202E2D8C0064992B /* Debug */,
+				A6E84339202E2D8C0064992B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E8433B202E2D8C0064992B /* Build configuration list for PBXNativeTarget "ColorWheel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E8433C202E2D8C0064992B /* Debug */,
+				A6E8433D202E2D8C0064992B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E8433E202E2D8C0064992B /* Build configuration list for PBXNativeTarget "ColorWheelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E8433F202E2D8C0064992B /* Debug */,
+				A6E84340202E2D8C0064992B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6E84341202E2D8C0064992B /* Build configuration list for PBXNativeTarget "ColorWheelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6E84342202E2D8C0064992B /* Debug */,
+				A6E84343202E2D8C0064992B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6E842E3202E2D8B0064992B /* Project object */;
+}
