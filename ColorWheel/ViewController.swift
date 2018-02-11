@@ -13,17 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
+        
         let size = CGFloat(90.0)
-        //break size out into variable since it's all the same...later see if there's a prettier way to do this... hmm...
 
-        circleSegmentView.center.x = self.view.center.x
-        circleSegmentView.center.y = self.view.center.y
-        circleSegmentView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 200)
+        circleSegmentView.frame = CGRect(x: 0, y: self.view.frame.midY * 0.75, width: view.frame.size.width, height: 200)
+        //TODO: looks like the midY of the view's frame times 0.75 works okay for now, but there's gotta be a better way to get that y point...
+        
         circleSegmentView.arcs = [
-            
             Arc(color: UIColor.red.cgColor, size: size),
             Arc(color: UIColor.blue.cgColor, size: size),
             Arc(color: UIColor.green.cgColor, size: size),
@@ -32,5 +31,8 @@ class ViewController: UIViewController {
         
         view.addSubview(circleSegmentView)
     }
+    
+    //TODO: gesture recogizers for rotation
+    
 }
 
