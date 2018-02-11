@@ -32,7 +32,7 @@ class CircleSegmentView: UIView {
         let viewCenter = CGPoint(x: bounds.size.width * 0.5, y: bounds.size.height * 0.5)
         var startingAngle = -CGFloat.pi * 0.5
         let arcCount = arcs.reduce(0, {$0 + $1.size})
-        
+
         for arc in arcs {
             context?.setFillColor(arc.color)
             
@@ -50,7 +50,7 @@ class CircleSegmentView: UIView {
             ///re set the starting angle for next arc to the ending angle of last arc so it ends up making a whole circle of arcs. aka start the next one where the last one ended!
         }
     }
-    
+
 }
 
 struct Arc {
