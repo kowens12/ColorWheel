@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import WatchKit
+import WatchConnectivity
 
 class ViewController: UIViewController {
     let circleSegmentView = CircleSegmentView()
@@ -41,6 +43,7 @@ class ViewController: UIViewController {
         view.addSubview(circleSegmentView)
         }
     
+    //TODO: fix rotation recognizer...
     @objc func handleRotation(sender: UIRotationGestureRecognizer) {
         let cgAffineTransform = CGAffineTransform()
         sender.view?.transform = cgAffineTransform.rotated(by: sender.rotation)
@@ -52,6 +55,11 @@ class ViewController: UIViewController {
 //        }
        // self.view.bringSubview(toFront: circleSegmentView)
     }
+    
+    //TODO: determine how to display color arc at top of screen on watch
+    //////MARK: Thoughts/Ideas/PseudoCode
+    //get position of arc - store as variable, when rotation ends then determine which member of the Arc array is in the same position and display -- could do this with coordinates / position in the view
+    ////kind of hacky, but could work --> make a small subview that will be below the colorwheel view....whichever member of colorwheel/arc array member covers the small invisible view would be the color to display
 }
 
 
