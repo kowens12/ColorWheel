@@ -12,25 +12,19 @@ class ViewController: UIViewController {
     let circleSegmentView = CircleSegmentView()
     override func viewDidLoad() {
         super.viewDidLoad()
-       // makeCircle()
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         circleSegmentView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 200)
+        circleSegmentView.arcs = [
+            Arc(color: UIColor.red.cgColor, size: 25.0),
+            Arc(color: UIColor.blue.cgColor, size: 25.0),
+            Arc(color: UIColor.green.cgColor, size: 25.0),
+            Arc(color: UIColor.blue.cgColor, size: 25.0)
+        ]
+        
+        view.addSubview(circleSegmentView)
     }
-
-//    func makeCircle() {
-//        let circlePath = UIBezierPath(arcCenter: CGPoint(x:100, y:100), radius: CGFloat(100), startAngle: CGFloat(0), endAngle: CGFloat(Double.pi * 2), clockwise: true)
-//
-//        let circleLayer = CAShapeLayer()
-//        circleLayer.path = circlePath.cgPath
-//
-//        circleLayer.fillColor = UIColor.red.cgColor
-//        view.layer.addSublayer(circleLayer)
-//
-//    }
-    
-
 }
 

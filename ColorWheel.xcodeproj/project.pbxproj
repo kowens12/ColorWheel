@@ -144,7 +144,6 @@
 		A6E842E2202E2D8B0064992B = {
 			isa = PBXGroup;
 			children = (
-				A6FF9371202FCA7700752A21 /* CircleSegmentView.swift */,
 				A6E842ED202E2D8B0064992B /* ColorWheel */,
 				A6E84302202E2D8B0064992B /* ColorWheelTests */,
 				A6E8430D202E2D8B0064992B /* ColorWheelUITests */,
@@ -171,6 +170,7 @@
 			children = (
 				A6E842EE202E2D8B0064992B /* AppDelegate.swift */,
 				A6E842F0202E2D8B0064992B /* ViewController.swift */,
+				A6FF9371202FCA7700752A21 /* CircleSegmentView.swift */,
 				A6E842F2202E2D8B0064992B /* Main.storyboard */,
 				A6E842F5202E2D8B0064992B /* Assets.xcassets */,
 				A6E842F7202E2D8B0064992B /* LaunchScreen.storyboard */,

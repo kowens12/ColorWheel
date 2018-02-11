@@ -18,7 +18,6 @@ class CircleSegmentView: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
 
     var arcs = [Arc]() {
         didSet { setNeedsDisplay() }
@@ -32,12 +31,12 @@ class CircleSegmentView: UIView {
         //get the center so we have a starting place for each new arc once we loop through array
         let viewCenter = CGPoint(x: bounds.size.width * 0.5, y: bounds.size.height * 0.5)
         var startingAngle = -CGFloat.pi * 0.5
-        let arcCount = arcs.count
+        let arcCount = arcs.reduce(0, {$0 + $1.size})
         
         for arc in arcs {
-            context?.setFillColor(arc.color.cgcolor)
+            context?.setFillColor(arc.color)
             
-            let endingAngle = startingAngle + 2 * .pi * (arc.value / arcCount)
+            let endingAngle = startingAngle + 2 * .pi * (arc.size/arcCount)
             
             context?.move(to: viewCenter)
             context?.addArc(center: viewCenter,
