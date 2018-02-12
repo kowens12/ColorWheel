@@ -18,11 +18,12 @@
 		A6E8431A202E2D8B0064992B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E84318202E2D8B0064992B /* Interface.storyboard */; };
 		A6E8431C202E2D8B0064992B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E8431B202E2D8B0064992B /* Assets.xcassets */; };
 		A6E84323202E2D8B0064992B /* ColorWheel WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A6E84322202E2D8B0064992B /* ColorWheel WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A6E84328202E2D8B0064992B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E84327202E2D8B0064992B /* InterfaceController.swift */; };
 		A6E8432A202E2D8B0064992B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E84329202E2D8B0064992B /* ExtensionDelegate.swift */; };
 		A6E8432C202E2D8B0064992B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E8432B202E2D8B0064992B /* NotificationController.swift */; };
 		A6E8432E202E2D8C0064992B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E8432D202E2D8C0064992B /* Assets.xcassets */; };
 		A6FF9372202FCA7700752A21 /* CircleSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FF9371202FCA7700752A21 /* CircleSegmentView.swift */; };
+		A6FF93772031408300752A21 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FF93762031408300752A21 /* Storyboard.storyboard */; };
+		A6FF937920314F0C00752A21 /* ColorWheelInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FF93732030F71B00752A21 /* ColorWheelInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,13 +101,14 @@
 		A6E8431B202E2D8B0064992B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6E8431D202E2D8B0064992B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6E84322202E2D8B0064992B /* ColorWheel WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ColorWheel WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6E84327202E2D8B0064992B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		A6E84329202E2D8B0064992B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A6E8432B202E2D8B0064992B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		A6E8432D202E2D8C0064992B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6E8432F202E2D8C0064992B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6E84330202E2D8C0064992B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		A6FF9371202FCA7700752A21 /* CircleSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSegmentView.swift; sourceTree = "<group>"; };
+		A6FF93732030F71B00752A21 /* ColorWheelInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWheelInterfaceController.swift; sourceTree = "<group>"; };
+		A6FF93762031408300752A21 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,8 +212,9 @@
 		A6E84326202E2D8B0064992B /* ColorWheel WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A6E84327202E2D8B0064992B /* InterfaceController.swift */,
+				A6FF93732030F71B00752A21 /* ColorWheelInterfaceController.swift */,
 				A6E84329202E2D8B0064992B /* ExtensionDelegate.swift */,
+				A6FF93762031408300752A21 /* Storyboard.storyboard */,
 				A6E8432B202E2D8B0064992B /* NotificationController.swift */,
 				A6E8432D202E2D8C0064992B /* Assets.xcassets */,
 				A6E8432F202E2D8C0064992B /* Info.plist */,
@@ -325,6 +328,11 @@
 					A6E842EA202E2D8B0064992B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					A6E842FE202E2D8B0064992B = {
 						CreatedOnToolsVersion = 9.2;
@@ -407,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6E8432E202E2D8C0064992B /* Assets.xcassets in Resources */,
+				A6FF93772031408300752A21 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +454,7 @@
 			files = (
 				A6E8432C202E2D8B0064992B /* NotificationController.swift in Sources */,
 				A6E8432A202E2D8B0064992B /* ExtensionDelegate.swift in Sources */,
-				A6E84328202E2D8B0064992B /* InterfaceController.swift in Sources */,
+				A6FF937920314F0C00752A21 /* ColorWheelInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +693,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q67G7E28V;
 				INFOPLIST_FILE = ColorWheel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheel;
@@ -698,6 +708,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q67G7E28V;
 				INFOPLIST_FILE = ColorWheel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kateowens.ColorWheel;
